@@ -1,0 +1,29 @@
+{
+  "name": "@megahertz/oxconfig",
+  "version": "0.0.3",
+  "description": "Shared configs for the Pulse monorepo",
+  "type": "module",
+  "exports": {
+    "./*": "./*",
+    "./tsconfig": "./tsconfig.base.json",
+    "./oxlint": "./oxlint/index.js",
+    "./oxfmt": "./oxfmt.js"
+  },
+  "scripts": {
+    "format": "oxfmt && oxlint --fix",
+    "lint": "oxfmt --check && oxlint",
+    "check": "pnpm lint"
+  },
+  "dependencies": {
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "globals": "^17.5.0"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.47.0",
+    "oxlint": "^1.62.0"
+  },
+  "optionalDependencies": {
+    "oxfmt": "*",
+    "oxlint": "*"
+  }
+}
