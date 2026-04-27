@@ -1,6 +1,6 @@
 {
   "name": "@megahertz/oxconfig",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Shared configs for the Pulse monorepo",
   "type": "module",
   "exports": {
