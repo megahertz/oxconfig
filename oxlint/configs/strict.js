@@ -31,7 +31,7 @@ export default {
     'dot-notation': ['error', { allowKeywords: true }],
 
     // https://oxc.rs/docs/guide/usage/linter/rules/eslint/eqeqeq.html
-    'eqeqeq': ['error', 'always', { null: 'ignore' }],
+    'eqeqeq': ['error', 'always'],
 
     // https://oxc.rs/docs/guide/usage/linter/rules/eslint/grouped-accessor-pairs.html
     'grouped-accessor-pairs': 'error',
