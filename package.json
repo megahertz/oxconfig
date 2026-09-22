@@ -10,9 +10,10 @@
     "./oxfmt": "./oxfmt.js"
   },
   "scripts": {
+    "check": "npm run lint",
     "format": "oxfmt && oxlint --fix",
     "lint": "oxfmt --check && oxlint",
-    "check": "pnpm lint"
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "eslint-plugin-perfectionist": "^5.9.0",

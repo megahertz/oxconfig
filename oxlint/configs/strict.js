@@ -16,7 +16,7 @@ export default {
     'consistent-return': 'error',
 
     // https://oxc.rs/docs/guide/usage/linter/rules/eslint/curly.html
-    'curly': ['error', 'multi-line'],
+    'curly': ['error', 'all'],
 
     // https://oxc.rs/docs/guide/usage/linter/rules/eslint/default-case.html
     'default-case': ['error', { commentPattern: '^no default$' }],
