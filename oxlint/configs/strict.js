@@ -33,6 +33,16 @@ export default {
     // https://oxc.rs/docs/guide/usage/linter/rules/eslint/eqeqeq.html
     'eqeqeq': ['error', 'always'],
 
+    // https://oxc.rs/docs/guide/usage/linter/rules/eslint/func-style.html
+    'func-style': [
+      'error',
+      'declaration',
+      {
+        allowArrowFunctions: false,
+        overrides: { namedExports: 'declaration' },
+      },
+    ],
+
     // https://oxc.rs/docs/guide/usage/linter/rules/eslint/grouped-accessor-pairs.html
     'grouped-accessor-pairs': 'error',
 

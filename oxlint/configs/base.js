@@ -553,6 +553,9 @@ export default {
       { avoidQuotes: true, ignoreConstructors: false },
     ],
 
+    // https://oxc.rs/docs/guide/usage/linter/rules/eslint/one-var.html
+    'one-var': ['error', 'never'],
+
     // https://oxc.rs/docs/guide/usage/linter/rules/eslint/operator-assignment.html
     'operator-assignment': ['error', 'always'],
 
