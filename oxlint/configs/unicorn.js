@@ -165,7 +165,8 @@ export default {
     'unicorn/no-zero-fractions': 'error',
 
     // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/number-literal-case.html
-    'unicorn/number-literal-case': 'error',
+    // Off: oxfmt prints hex digits in lowercase, the rule wants uppercase
+    'unicorn/number-literal-case': 'off',
 
     // https://oxc.rs/docs/guide/usage/linter/rules/unicorn/numeric-separators-style.html
     'unicorn/numeric-separators-style': 'error',
