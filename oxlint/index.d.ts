@@ -13,6 +13,8 @@ export type {
   RuleCategories,
 } from 'oxlint';
 
+export function defineConfig<T extends OxconfigConfig>(cfg: T): T;
+
 export type OxconfigOverride = {
   files?: OxlintOverride['files'];
 } & Omit<OxlintOverride, 'files'>;
@@ -39,7 +41,5 @@ export type OxconfigName =
   | 'tsStrict'
   | 'unicorn'
   | 'vitest';
-
-export function defineConfig<T extends OxconfigConfig>(cfg: T): T;
 
 export const configs: Record<OxconfigName, OxconfigOverride>;

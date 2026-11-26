@@ -42,6 +42,20 @@ export default {
       { order: 'asc', type: 'alphabetical' },
     ],
 
+    // https://perfectionist.dev/rules/sort-modules
+    // Interfaces and type aliases go to the end of a module. Declarations
+    // are not sorted otherwise; statements like `const x = …` split groups.
+    'perfectionist/sort-modules': [
+      'error',
+      {
+        groups: [
+          'unknown',
+          ['interface', 'export-interface', 'type', 'export-type'],
+        ],
+        type: 'unsorted',
+      },
+    ],
+
     // https://perfectionist.dev/rules/sort-named-exports
     'perfectionist/sort-named-exports': [
       'error',
