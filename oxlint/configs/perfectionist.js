@@ -1,5 +1,11 @@
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+
 export default {
-  jsPlugins: ['eslint-plugin-perfectionist'],
+  // A bare name is resolved from the oxlint binary or the project, where pnpm
+  // doesn't expose this package's dependencies (e.g. in the IDE integration)
+  jsPlugins: [require.resolve('eslint-plugin-perfectionist')],
 
   rules: {
     // https://perfectionist.dev/rules/sort-array-includes
